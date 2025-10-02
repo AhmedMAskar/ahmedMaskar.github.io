@@ -1,11 +1,63 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>My GitHub Pages Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dr Ahmed Askar — Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Dr Ahmed Askar — GIS, public health analytics, and Python apps." />
 </head>
 <body>
-  <h1>Bismillah - Welcome to Dr Ahmed Askar Page!</h1>
-  <p>Under Construction.</p>
+  <header>
+    <div class="container topbar">
+      <div class="brand">Dr Ahmed Askar</div>
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="apps.html">Apps</a>
+        <a href="projects.html">Projects</a>
+        <a href="cv.html">CV</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+    <section class="hero">
+      <div class="container">
+        <h1>Bismillah — Welcome</h1>
+        <p>Under construction—but growing fast. Explore my Python/Shiny apps, GIS projects, and publications.</p>
+      </div>
+    </section>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h2>Featured</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Contact Your Representatives (Shiny for Python)</h3>
+          <p class="small">Look up U.S. Senators & House member by address, with contact links.</p>
+          <a class="btn" href="apps.html#reps-app">Open app</a>
+        </div>
+        <div class="card">
+          <h3>GIS & Public Health</h3>
+          <p class="small">Spatial analytics for inspections, recalls, and emergency response.</p>
+          <a class="btn" href="projects.html">See projects</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Latest Updates</h2>
+      <ul>
+        <li>Building workshop materials for Python & GIS (public health focus).</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <hr />
+      <div class="small">© <span id="y"></span> Ahmed Askar — All opinions my own.</div>
+    </div>
+  </footer>
+  <script>document.getElementById("y").textContent = new Date().getFullYear()</script>
 </body>
 </html>
