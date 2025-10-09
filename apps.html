@@ -23,25 +23,67 @@
   <main class="container">
     <section class="section">
       <h1>Apps</h1>
-      <p class="small">This page will showcase interactive tools. More apps will be added soon.</p>
-    </section>
-
-    <section class="section" id="reps-app">
-      <h2>Contact Your Representatives</h2>
-      <p>An app (in progress).</p>
-      <div class="card">
-        <!-- Replace APP_URL with your live app URL (Hugging Face or Streamlit) -->
-        <iframe src="APP_URL" title="Representatives Finder"></iframe>
-      </div>
-      <p style="margin-top:10px">
-        If your network blocks iframes,
-        <a class="btn" href="APP_URL" target="_blank" rel="noopener">open in a new tab</a>.
+      <p class="small">
+        Featured analytical and geospatial tools built for research, transparency, and public insight.
       </p>
     </section>
+
+    <!-- ===================== FEATURED APP ===================== -->
+    <section class="section" id="berbera-observatory">
+      <h2>Berbera Maritime Observatory</h2>
+      <p>
+        A live, open-data dashboard tracking ship traffic at the Port of Berbera (Somaliland) —
+        arrivals, departures, and vessel activity — with daily, weekly, monthly, and year-over-year views.
+        Built in Python + Streamlit, backed by PostGIS, and designed for transparency in maritime performance analytics.
+      </p>
+
+      <div class="card">
+        <iframe
+          src="YOUR_STREAMLIT_APP_URL_HERE"
+          title="Berbera Maritime Observatory"
+          width="100%" height="820"
+          style="border:1px solid #ddd;border-radius:10px;"
+          loading="lazy"
+        ></iframe>
+      </div>
+
+      <p style="margin-top:10px">
+        If your network blocks iframes,
+        <a class="btn" href="YOUR_STREAMLIT_APP_URL_HERE" target="_blank" rel="noopener">open the live app in a new tab</a>.
+      </p>
+
+      <details style="margin-top:14px">
+        <summary><strong>Why this app?</strong></summary>
+        <div class="small" style="margin-top:8px; line-height:1.5">
+          The <em>World Bank Container Port Performance Index (CPPI)</em> ranks global ports by efficiency,
+          but its black-box methodology leaves gaps for local verification.
+          <ul>
+            <li>
+              The CPPI 2023 report ranked Berbera <strong>103 rd globally</strong> and first in Sub-Saharan Africa after major DP World investments.
+            </li>
+            <li>
+              A later 2025 release highlighted Mogadishu as East Africa’s most efficient gateway (163 rd globally), with Berbera lower — illustrating year-to-year volatility.
+            </li>
+            <li>
+              DP World’s 2017 take-over improved cargo volumes (+35 %) and vessel productivity (+300 %), reducing waiting times from days to hours.
+            </li>
+          </ul>
+          Because CPPI results depend on opaque models, this observatory collects timestamped vessel data daily to provide an independent view of port activity and enable comparison with other regional hubs such as Mogadishu and Djibouti.
+        </div>
+      </details>
+
+      <div class="small" style="margin-top:10px;color:#666">
+        <em>Note:</em> Educational and non-commercial demo project using public and openly sourced data.
+      </div>
+    </section>
+    <!-- =================== END FEATURED APP =================== -->
   </main>
 
   <footer>
-    <div class="container"><hr /><div class="small">© <span id="y"></span> Ahmed Askar</div></div>
+    <div class="container">
+      <hr />
+      <div class="small">© <span id="y"></span> Ahmed Askar</div>
+    </div>
   </footer>
   <script>document.getElementById("y").textContent = new Date().getFullYear()</script>
 </body>
